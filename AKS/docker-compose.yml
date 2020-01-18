@@ -13,9 +13,9 @@ services:
     image: ${DOCKER_REGISTRY}-helloworld:${VERSION:-dev}
     build:
       context: .
-      dockerfile: ./AKS/Services/HelloWorld/Dockerfile
+      dockerfile: Services/HelloWorld/Dockerfile
   helloworldnode:
     image: ${DOCKER_REGISTRY}-helloworldnode:${VERSION:-dev}
     build:
       context: .
-      dockerfile: ./AKS/Services/HelloNode/Dockerfile
+      dockerfile: Services/HelloNode/Dockerfile
