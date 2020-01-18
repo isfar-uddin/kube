@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: aks-hellonode
-        image: isfar2.azurecr.io/aks-web:#{Release.Artifacts.aks.BuildNumber}#
+        image: isfar2.azurecr.io/aks-helloworldnode:#{Release.Artifacts.aks.BuildNumber}#
         env:
         - name: ASPNETCORE_ENVIRONMENT
           value: "Development"        
